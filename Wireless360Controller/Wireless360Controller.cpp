@@ -270,6 +270,7 @@ void Wireless360Controller::fiddleReport(unsigned char *data, int length)
         }
     }
 
+    // hack for crimsonland.
     report->trigL = report->right.x/256 + 128;
     report->trigR = report->right.y/256 + 128;
 }
