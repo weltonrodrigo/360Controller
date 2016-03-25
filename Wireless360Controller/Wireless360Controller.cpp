@@ -269,6 +269,9 @@ void Wireless360Controller::fiddleReport(unsigned char *data, int length)
             }
         }
     }
+
+    report->trigL = report->right.x/256 + 128;
+    report->trigR = report->right.y/256 + 128;
 }
 
 void Wireless360Controller::remapButtons(void *buffer)
@@ -304,6 +307,8 @@ void Wireless360Controller::remapAxes(void *buffer)
     XBOX360_HAT temp = report360->left;
     report360->left = report360->right;
     report360->right = temp;
+
+
 }
 
 void Wireless360Controller::receivedHIDupdate(unsigned char *data, int length)
