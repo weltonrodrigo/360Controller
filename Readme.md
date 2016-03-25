@@ -1,5 +1,5 @@
 # XBox 360 Controller driver for Mac OS X
-
+[![Build Status](https://travis-ci.org/weltonrodrigo/360Controller.svg?branch=master)](https://travis-ci.org/weltonrodrigo/360Controller)
 ## About ##
 
 This driver supports the Microsoft Xbox 360 controller, including access to
