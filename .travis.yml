@@ -1,4 +1,7 @@
 language: objective-c
+addons:
+  artifacts:
+    s3_region: "sa-east-1"
 compiler:
   - clang
 os:
